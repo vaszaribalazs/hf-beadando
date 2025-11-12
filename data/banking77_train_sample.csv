@@ -1,0 +1,201 @@
+text,label
+I am still waiting on my card?,card_arrival
+What can I do if my card still hasn't arrived after 2 weeks?,card_arrival
+I have been waiting over a week. Is the card still coming?,card_arrival
+Can I track my card while it is in the process of delivery?,card_arrival
+"How do I know if I will get my card, or if it is lost?",card_arrival
+When did you send me my new card?,card_arrival
+Do you have info about the card on delivery?,card_arrival
+What do I do if I still have not received my new card?,card_arrival
+Does the package with my card have tracking?,card_arrival
+I ordered my card but it still isn't here,card_arrival
+Why has my new card still not come?,card_arrival
+"I still haven't received my card after two weeks, is it lost?",card_arrival
+Can you track my card for me?,card_arrival
+Is there a way to track the delivery of my card?,card_arrival
+It's been a week since I ordered my card and it's not here. Please help?,card_arrival
+Will I be able to track the card that was sent to me?,card_arrival
+I don't have my card in 1 week.  Should I be worried?,card_arrival
+How do I know when my new card is going to arrive?,card_arrival
+My new card has not been delivered to my home yet. What is going on?,card_arrival
+It's been a week since you issued me a card and I still didn't get it. Should I keep waiting?,card_arrival
+"On the card that is coming, what's the tracking info?",card_arrival
+What is the status of my card's delivery?,card_arrival
+Have you sent out my card yet?,card_arrival
+My card isn't here yet.,card_arrival
+where is my new card?,card_arrival
+What is my money worth in other countries?,exchange_rate
+Will my money be of equal value when I travel abroad?,exchange_rate
+Do you know the rate of exchange?,exchange_rate
+What foreign exchange rate will I get on weekdays and on the weekends?,exchange_rate
+What is the exchange looking like?,exchange_rate
+How is the exchange rate doing?,exchange_rate
+I would like to know how exchange rates are calculated when transferring funds.,exchange_rate
+I would like to know what exchange rates you use?,exchange_rate
+"If I need to cash foreign transfers, how does that work?",exchange_rate
+Do you know what your exchange rates are?,exchange_rate
+How do I know what exchange rate I will get?,exchange_rate
+What are you exchange rates?,exchange_rate
+Do you have the best exchange rate?,exchange_rate
+Where can I find your exchange rates?,exchange_rate
+Your exchange rates come from where?,exchange_rate
+I need to know what your exchange rates are.,exchange_rate
+What's the process for exchanges?,exchange_rate
+What do you think of the exchange rate?,exchange_rate
+How are exchange rates calculated at this bank?,exchange_rate
+What do you use to figure out the exchange rate for the card?,exchange_rate
+What's the foreign exchange rate I will receive?,exchange_rate
+I need to know what foreign exchange rate I can get.,exchange_rate
+What are the current exchange rates?,exchange_rate
+What exchange rate will I receive?,exchange_rate
+What is the basis of your exchange rates?,exchange_rate
+I can't use my card because it is not working.,card_not_working
+I can't seem to be able to use my card,card_not_working
+"My card isn't working at all, I need assistance. It's really frustrating.",card_not_working
+Can you tell me what the problem with my card is? It was declined at a restaurant today.,card_not_working
+How do I fix a broken card?,card_not_working
+My card was working but now it doesn't.,card_not_working
+I cannot seem to use my card.,card_not_working
+I think my card is broke it's not working anymore,card_not_working
+I have not been able to use this card.,card_not_working
+What do I do if i accidentally broke my card?,card_not_working
+How come my card doesn't work anymore?,card_not_working
+"For a week now, I have tried to use my card and it is still not working.",card_not_working
+My actual card isn't functioning.,card_not_working
+I can't get the card itself to work.,card_not_working
+What should I do if my card doesn't work?,card_not_working
+Why won't my card work.,card_not_working
+My card will not work,card_not_working
+My card is not working.,card_not_working
+HOW LONG THE CARD VALIDITY,card_not_working
+My card seems to not be working at all.,card_not_working
+My card gets rejected when I try to use it,card_not_working
+I am unable to use my card for some reason.,card_not_working
+Why can't I use my card?,card_not_working
+I think my card is broke?,card_not_working
+What do I do?  My card is broken.,card_not_working
+Has there been any activity on my card today?,lost_or_stolen_card
+I lost my wallet and all my cards were in it.,lost_or_stolen_card
+I'm panicking!  I lost my card!  Help!,lost_or_stolen_card
+I need to report a stolen card,lost_or_stolen_card
+How do I replace a stolen card?,lost_or_stolen_card
+Can you provide information for freezing my card immediately?,lost_or_stolen_card
+What's the phone number to freeze a card?,lost_or_stolen_card
+I can't find my card! Can you help?,lost_or_stolen_card
+"Hi, I am on vacation in Spain and someone stole my bag with my phone and wallet with cards and everything. Can you block it ASAP and then I want to order a new one also ASAP.",lost_or_stolen_card
+Help! I lost my card!,lost_or_stolen_card
+My card is missing.  Please help.,lost_or_stolen_card
+I think that my card has been stolen!,lost_or_stolen_card
+My card was stolen,lost_or_stolen_card
+A fee shouldn't apply to me if my card was stolen.,lost_or_stolen_card
+"My card has been stolen. I reported it with the police, but I need to report it with you as well.",lost_or_stolen_card
+Can you tell me the status of my new card?,lost_or_stolen_card
+My card has been stolen what do I do?,lost_or_stolen_card
+"I can't find my card, it is lost.",lost_or_stolen_card
+My card is lost!  Please help me!,lost_or_stolen_card
+I believe that my card has been stolen!,lost_or_stolen_card
+What should I do if I think my card was stolen?,lost_or_stolen_card
+Can you send me a new card and block my current one. I'm in Spain and my wallet was stolen.,lost_or_stolen_card
+"I thought I left my card at a restaurant, but they claim not to have it and now I don't have any idea where it is. I'm so worried that someone might be using it fraudulently. Is there any way to look into this?",lost_or_stolen_card
+My bag got stolen with all my cards. Can you please cancel my card and send a new one?,lost_or_stolen_card
+I think my card is stolen!,lost_or_stolen_card
+I am worried that too much time has gone by for a transfer to be completed.,transfer_not_received_by_recipient
+What is the time frame that it usually takes for a transfer to come through? I have a friend needing it immediately but it has yet to come through.,transfer_not_received_by_recipient
+My money transaction can't be seen by the person I sent it to,transfer_not_received_by_recipient
+"How long does it typically take a transfer to go through?  I sent some money to a friend earlier today, and she really needs it.  It still is a pending transfer, even though I sent it a few hours ago.",transfer_not_received_by_recipient
+"I have done a transfer within the country the day before yesterday, but it's still not there yet. Can you please check what's going on with that, the account number definitely is the right one, I've checked that already.",transfer_not_received_by_recipient
+"I have done a transfer within the country the day before yesterday, but it's still not there yet. Can you please check what's going on with that, the account number is the right one, I've checked that several times already.",transfer_not_received_by_recipient
+My money transaction hasn't arrived.,transfer_not_received_by_recipient
+I sent money to a person and they haven't received the payment yet.,transfer_not_received_by_recipient
+I do not know where the transaction is.,transfer_not_received_by_recipient
+I transferred money but the recipient does not see the funds in their account?,transfer_not_received_by_recipient
+why hasn't a transaction to a friend cleared yet?,transfer_not_received_by_recipient
+The app isn't showing my transactions,transfer_not_received_by_recipient
+Why isn't the recipient seeing the transaction? I just sent the money.,transfer_not_received_by_recipient
+I transferred money and it didn't get there.,transfer_not_received_by_recipient
+Is there a reason why a recipient might not see my money transaction,transfer_not_received_by_recipient
+I don't see the transaction I made to a friend on my account.,transfer_not_received_by_recipient
+why has a transaction to a friend been delayed?,transfer_not_received_by_recipient
+"A transaction I did to my friend hasn't arrived yet, why?",transfer_not_received_by_recipient
+Where is my last money transaction,transfer_not_received_by_recipient
+I am having an issue with an in country transfer I did a few days ago. It has yet to appear in my account. I have checked to be sure that all account information is correct multiple times. What is taking the transfer so long?,transfer_not_received_by_recipient
+I made a transfer the day before yesterday within this country. It is still not showing up at all. I have double-checked and the account number is certainly right. I've actually type this multiple times. can you look into what is going on here?,transfer_not_received_by_recipient
+How much time do transfers typically take? I sent money to a friend who needs it urgently. It's been hours and has not gone through.,transfer_not_received_by_recipient
+A transaction to a friend still hasn't shown up.,transfer_not_received_by_recipient
+I sent money and the recipient has not received their money after two weeks.,transfer_not_received_by_recipient
+How long will it take for my transfer to arrive?,transfer_not_received_by_recipient
+How long does it take to get a refund on something I bought?,request_refund
+Please tell me how to get a refund for something I bought.,request_refund
+Can i cancel this purchase?,request_refund
+I want to return an item for a refund can I do that?,request_refund
+Can I request a refund,request_refund
+"I am not sure how this will work, but I have not received a product I ordered.  I want a refund, but should I just cancel the payment?",request_refund
+Where do I go for a refund?,request_refund
+I'm interested in learning more about product refunds.,request_refund
+do you offer refunds? i would like to return purchase.,request_refund
+What's the procedure for canceling a purchase?,request_refund
+I need to cancel a purchase that I made the other day.,request_refund
+Hello. How do i go about getting a refund of an item i bought ? I want to cancel the payment since i have not received the item yet.,request_refund
+"I need a refund and cancel a transaction on an item I purchased and i need it as soon as possible, please!",request_refund
+i bought the wrong size and would like a refund,request_refund
+I want to know about your refund policy.,request_refund
+Can I cancel an order if I haven't received the item yet? And how can I get my money back? Please help. Thanks.,request_refund
+"Hey I want to get a refund on something I bought, but not sure how to go about it. Can you please just cancel the payment, I have not received the item yet.",request_refund
+I am quite aggravated that I ordered online almost a month ago and I never got my package and I paid for it. I would really appreciate it if I could get a full refund back now.,request_refund
+My statement has a charge that shouldn't have been made.,request_refund
+My product hasn't arrived even though I ordered it a while ago. I want a refund!,request_refund
+Is there a way you can have money from a purchase I made refunded to my account.,request_refund
+I've changed my mind on an item.  How do I get a refund?,request_refund
+"I decided I no long want something that I ordered, and want a refund. How do I go about doing that?",request_refund
+How do I get a refund for something I bought?,request_refund
+I made a purchase recently but I have decided that I'm not buying it and I need to receive my money back. Can you please give me a refund ASAP. It's extremely urgent.,request_refund
+How do I deactivate my account?,terminate_account
+Remove my account immediately.,terminate_account
+Are you able to delete my account?,terminate_account
+How do I discontinue my account?,terminate_account
+please delete account,terminate_account
+I need you to delete my account now.,terminate_account
+"I would like to delete my account now, please.",terminate_account
+I would like to invalidate my account.  I am very disappointed with your services.,terminate_account
+I need to delete my account.,terminate_account
+Can you delete the account?,terminate_account
+"for god sake, just delete my account i am sick of this",terminate_account
+"I need to delete my account, please.",terminate_account
+unhappy with service need to delete account,terminate_account
+"This company is bad, delete my account now.",terminate_account
+How do I shut down my account and get out of this company?,terminate_account
+How do I close my account?,terminate_account
+I want to shut down my account as soon as possible.,terminate_account
+cancel my account,terminate_account
+Help me close my account.,terminate_account
+I want to close my account due to poor customer service.,terminate_account
+"I would like to close my account, as I'm not happy.",terminate_account
+What's the process for terminating an account?,terminate_account
+What steps do I need to do to delete my account?,terminate_account
+How do I delete my account now,terminate_account
+I want to cancel my account.,terminate_account
+Please help me with my card.  It won't activate.,activate_my_card
+I tired but an unable to activate my card.,activate_my_card
+I want to start using my card.,activate_my_card
+How do I verify my new card?,activate_my_card
+I tried activating my plug-in and it didn't piece of work,activate_my_card
+How do i activate my card,activate_my_card
+Can someone assist me with activating my card?,activate_my_card
+My card needs to be activated.,activate_my_card
+I was unable to activate my card.,activate_my_card
+Is my card ready for use or does it need activated and if so how?,activate_my_card
+Help me activate my new card.,activate_my_card
+Do I need a photo ID to activate a my new card?,activate_my_card
+"I just got my new card, how do I activate it?",activate_my_card
+Can I have my card activated?,activate_my_card
+i cant seem to activate card,activate_my_card
+It won't let me activate my card.,activate_my_card
+I tried activation my card and it didn't employment,activate_my_card
+I want to use my card. How do I activate it?,activate_my_card
+Activate my card,activate_my_card
+Can I get some help activating my new card?,activate_my_card
+Is my card activated?,activate_my_card
+I would like to activate my card.,activate_my_card
+Can I call to get my card activated?,activate_my_card
+How can I activate my new card? I didn't recieve any information with it about how to do so.,activate_my_card
+How do I activate my new card I just got?,activate_my_card

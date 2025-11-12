@@ -1,0 +1,24 @@
+# Virtuális környezetek
+.venv
+.venv311
+
+# Cache és build fájlok
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Notebookok és ideiglenes fájlok
+notebook/
+*.ipynb_checkpoints/
+
+# Git és egyéb meta fájlok
+.git
+.gitignore
+.env
+
+# IDE és rendszer fájlok
+.vscode/
+.DS_Store
+Thumbs.db
