@@ -1,24 +1,22 @@
-# Python 3.11 slim image
 FROM python:3.11-slim
 
-# Rendszer csomagok, amik sok libnek kellenek
+# Rendszer csomagok
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential git curl && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Először a requirements, hogy a pip cache réteg újrahasznosuljon
+# Python csomagok
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Alkalmazás és adatok bemásolása
+# Alkalmazás fájlok
 COPY app /app/app
 COPY data /app/data
 
-# (Opcionális) Port deklaráció
-EXPOSE 8000
+# A Hugging Face 7860-as portot vár – állítsuk be és használjuk
+ENV PORT=7860
 
-# Indítás: FastAPI + Uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["bash", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
