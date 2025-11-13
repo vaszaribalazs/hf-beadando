@@ -5,3 +5,4 @@ torch
 pandas
 mlflow
 scikit-learn
+gradio>=4.0.0
