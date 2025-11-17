@@ -2,13 +2,13 @@
 
 from transformers import pipeline
 
-# modell és pipeline betöltése
+# CPU-n futó zero-shot classifier
 classifier = pipeline(
     "zero-shot-classification",
     model="facebook/bart-large-mnli",
-    device_map="auto",
-    torch_dtype=None,
+    device=-1,  # -1 = CPU
 )
+
 
 INTENT_LABELS = [...]  # Banking77 címkék
 
