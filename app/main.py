@@ -1,7 +1,4 @@
-# app/main.py
-
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from .model import predict_intent
 
@@ -19,33 +16,36 @@ def predict(payload: TextIn):
     return predict_intent(payload.text)
 
 @app.get("/ui", response_class=HTMLResponse)
-def ui():
+def ui_page():
     return """
     <html>
-      <head>
-        <title>Banking77 Intent Demo</title>
-      </head>
-      <body>
+    <head>
+        <title>Banking77 Intent API – Demo</title>
+    </head>
+    <body style="font-family: Arial; margin: 20px">
         <h1>Banking77 Intent API – Demo</h1>
-        <form id="form">
-          <textarea id="text" rows="4" cols="60"
-            placeholder="Írd ide az angol nyelvű ügyfélüzenetet..."></textarea><br/>
-          <button type="button" onclick="send()">Küldés</button>
-        </form>
-        <pre id="result"></pre>
+        <textarea id="inputText" rows="4" cols="80"></textarea><br><br>
+        <button onclick="sendRequest()">Küldés</button>
+
+        <h3>Eredmény:</h3>
+        <pre id="output"></pre>
 
         <script>
-          async function send() {
-            const text = document.getElementById('text').value;
-            const response = await fetch('/predict', {
-              method: 'POST',
-              headers: {'Content-Type': 'application/json'},
-              body: JSON.stringify({text})
-            });
-            const data = await response.json();
-            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
-          }
+            async function sendRequest() {
+                const text = document.getElementById("inputText").value;
+
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+
+                const result = await response.json();
+                document.getElementById("output").textContent = JSON.stringify(result, null, 2);
+            }
         </script>
-      </body>
+    </body>
     </html>
     """
