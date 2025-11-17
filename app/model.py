@@ -26,4 +26,39 @@ def predict_intent(text: str):
         "all_scores": [float(s) for s in result["scores"]],
     }
 
-# <<< ITT MOST NE LEGYEN @app.get("/ui") VAGY BÁRMI, AMI APP-OT HASZNÁL >>>
+from fastapi.responses import HTMLResponse
+
+@app.get("/ui", response_class=HTMLResponse)
+def ui_page():
+    return """
+    <html>
+    <head>
+        <title>Banking77 Intent API – Demo</title>
+    </head>
+    <body style="font-family: Arial; margin: 20px">
+        <h1>Banking77 Intent API – Demo</h1>
+        <textarea id="inputText" rows="4" cols="80"></textarea><br><br>
+        <button onclick="sendRequest()">Küldés</button>
+
+        <h3>Eredmény:</h3>
+        <pre id="output"></pre>
+
+        <script>
+            async function sendRequest() {
+                const text = document.getElementById("inputText").value;
+
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+
+                const result = await response.json();
+                document.getElementById("output").textContent = JSON.stringify(result, null, 2);
+            }
+        </script>
+    </body>
+    </html>
+    """
