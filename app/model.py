@@ -1,29 +1,23 @@
-from pathlib import Path
-import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
+# app/model.py
 
-# Adatok betöltése
-BASE_DIR = Path(__file__).resolve().parents[1]
-TRAIN_PATH = BASE_DIR / "data" / "banking77_train_sample.csv"
+from transformers import pipeline
 
-train_df = pd.read_csv(TRAIN_PATH)
-INTENT_LABELS = sorted(train_df["label"].unique().tolist())
-
-# Modell inicializálása
-MODEL_NAME = "facebook/bart-large-mnli"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
-
+# modell és pipeline betöltése
 classifier = pipeline(
-    task="zero-shot-classification",
-    model=model,
-    tokenizer=tokenizer,
-    device=-1  # CPU-n fut
+    "zero-shot-classification",
+    model="facebook/bart-large-mnli",
+    device_map="auto",
+    torch_dtype=None,
 )
 
-def predict_intent(text: str) -> dict:
-    """Intent osztályozás Banking77 adatokkal"""
-    result = classifier(text, candidate_labels=INTENT_LABELS, multi_label=False)
+INTENT_LABELS = [...]  # Banking77 címkék
+
+def predict_intent(text: str):
+    result = classifier(
+        text,
+        candidate_labels=INTENT_LABELS,
+        multi_label=False
+    )
     return {
         "text": text,
         "intent": result["labels"][0],
@@ -31,51 +25,5 @@ def predict_intent(text: str) -> dict:
         "all_labels": result["labels"],
         "all_scores": [float(s) for s in result["scores"]],
     }
-@app.get("/ui", response_class=HTMLResponse)
-def ui():
-    return """
-    <html>
-        <head>
-            <meta charset="UTF-8" />
-            <title>Banking77 Intent Demo</title>
-        </head>
-        <body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto;">
-            <h2>Banking77 Intent API – Demo felület</h2>
-            <p>Írj be egy angol nyelvű ügyfélüzenetet, majd kattints a <strong>Küldés</strong> gombra.</p>
-            <textarea id="text" rows="4" style="width: 100%;"></textarea><br/><br/>
-            <button onclick="sendRequest()">Küldés</button>
-            <pre id="result" style="background:#f4f4f4; padding:10px; margin-top:20px;"></pre>
 
-            <script>
-                async function sendRequest() {
-                    const text = document.getElementById('text').value;
-                    const resultEl = document.getElementById('result');
-                    if (!text.trim()) {
-                        resultEl.textContent = 'Kérlek, írj be egy szöveget.';
-                        return;
-                    }
-
-                    resultEl.textContent = 'Feldolgozás folyamatban...';
-
-                    try {
-                        const response = await fetch('/predict', {
-                            method: 'POST',
-                            headers: {'Content-Type': 'application/json'},
-                            body: JSON.stringify({ text: text })
-                        });
-
-                        if (!response.ok) {
-                            resultEl.textContent = 'Hiba történt: HTTP ' + response.status;
-                            return;
-                        }
-
-                        const data = await response.json();
-                        resultEl.textContent = JSON.stringify(data, null, 2);
-                    } catch (err) {
-                        resultEl.textContent = 'Váratlan hiba: ' + err;
-                    }
-                }
-            </script>
-        </body>
-    </html>
-    """
+# <<< ITT MOST NE LEGYEN @app.get("/ui") VAGY BÁRMI, AMI APP-OT HASZNÁL >>>
